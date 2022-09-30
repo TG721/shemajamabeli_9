@@ -45,8 +45,8 @@ class MainActivity : AppCompatActivity() {
         recyclerViewButtons.adapter = adapterButtons
         val recyclerViewDots = binding.recyclerViewTop
         recyclerViewDots.adapter = adapterDots
-        recyclerViewButtons.layoutManager = GridLayoutManager(applicationContext,3)
-        recyclerViewDots.layoutManager = LinearLayoutManager(applicationContext, LinearLayoutManager.HORIZONTAL, false)
+        recyclerViewButtons.layoutManager = GridLayoutManager(this@MainActivity,3)
+        recyclerViewDots.layoutManager = LinearLayoutManager(this@MainActivity, LinearLayoutManager.HORIZONTAL, false)
     }
 
     private var inputNum: String = ""
