@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         val adapterButtons: buttonAdapter = buttonAdapter(items) {
             onButtonAdapterClick(it)
         }
-         adapterDots = dotAdapter(dots, appContext)
+         adapterDots = dotAdapter(dots, applicationContext)
         val recyclerViewButtons = binding.recyclerView
         recyclerViewButtons.adapter = adapterButtons
         val recyclerViewDots = binding.recyclerViewTop

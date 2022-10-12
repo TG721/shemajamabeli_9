@@ -1,6 +1,7 @@
 package com.example.shemajamebeli_9.adapter
 
 import android.app.Application
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
@@ -14,7 +15,7 @@ val dots = mutableListOf<Int>(
     R.color.white,
     R.color.white
 )
-class dotAdapter(private var dots: MutableList<Int>, private val AppContext: Application)
+class dotAdapter(private var dots: MutableList<Int>, private val AppContext: Context)
     : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     inner class DotHolder(private val dotLayout: DotBinding) :

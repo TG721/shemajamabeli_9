@@ -60,6 +60,8 @@
         app:layout_constraintGuide_percent="0.72" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:fadingEdge="none"
+        android:overScrollMode="never"
         android:id="@+id/recyclerView"
         android:layout_width="300dp"
         android:layout_height="400dp"
@@ -97,5 +99,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
         app:layout_constraintTop_toBottomOf="@+id/textViewEnterPasscode" />
 </androidx.constraintlayout.widget.ConstraintLayout>
